@@ -9,4 +9,7 @@ import { AuthLibService } from 'auth-lib';
 })
 export class FlightsSearchComponent {
 
+  constructor(private authLibService: AuthLibService) {
+    this.authLibService.echo('FlightsSearchComponent');
+  }
 }

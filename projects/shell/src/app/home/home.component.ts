@@ -5,9 +5,10 @@ import { AuthLibService } from 'auth-lib';
   selector: 'app-home',
   templateUrl: './home.component.html'
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
-  ngOnInit() {
+  constructor(private authLibService: AuthLibService) {
+    this.authLibService.echo('HomeComponent');
   }
 
 }
