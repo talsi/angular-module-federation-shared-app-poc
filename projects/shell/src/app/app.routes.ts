@@ -20,6 +20,11 @@ export const APP_ROUTES: Routes = [
     },
 
     {
+      path: 'hotels',
+      loadChildren: () => import('mfe2/Module').then(m => m.HotelsModule)
+    },
+
+    {
       path: '**',
       component: NotFoundComponent
     }
