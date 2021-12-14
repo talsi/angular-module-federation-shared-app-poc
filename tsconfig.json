@@ -21,6 +21,9 @@
       ],
       "auth-lib": [
         "projects/auth-lib/src/public-api.ts"
+      ],
+      "common": [
+        "projects/common/src/app/counter/index.ts"
       ]
     }
   }

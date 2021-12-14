@@ -29,6 +29,7 @@ module.exports = {
       remotes: {
           "mfe1": "mfe1@http://localhost:3000/remoteEntry.js",
           "mfe2": "mfe2@http://localhost:4000/remoteEntry.js",
+          "common": "common@http://localhost:2000/remoteEntry.js",
       },
 
       shared: share({
