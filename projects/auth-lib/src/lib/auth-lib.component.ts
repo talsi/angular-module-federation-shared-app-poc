@@ -4,7 +4,7 @@ import { AuthLibService } from './auth-lib.service';
 @Component({
   selector: 'lib-auth-lib',
   templateUrl: './auth-lib.component.html',
-  styleUrls: ['./auth-lib.component.css']
+  styleUrls: ['./auth-lib.component.scss']
 })
 export class AuthLibComponent implements OnInit {
 

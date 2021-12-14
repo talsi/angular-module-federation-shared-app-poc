@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { AuthLibService } from 'auth-lib';
 import { CounterService } from '../services/counter.service';
 
+console.log(`CounterComponent - OUTSIDE`);
 
 @Component({
   selector: 'app-common-counter',

@@ -29,6 +29,7 @@ module.exports = {
         name: "common",
         filename: "remoteEntry.js",  // 2-3K w/ Meta Data
         exposes: {
+            '.': './projects/common/src/app/counter/index.ts',
             './Module': './projects/common/src/app/counter/counter.module.ts',
         },
         shared: share({

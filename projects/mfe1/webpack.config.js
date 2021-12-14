@@ -6,7 +6,10 @@ const share = mf.share;
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
   path.join(__dirname, '../../tsconfig.json'),
-  ['auth-lib']
+  [
+    'auth-lib',
+    'common'
+  ]
 );
 
 module.exports = {
@@ -24,6 +27,11 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
+
+        // // For hosts (please adjust)
+        remotes: {
+          "common": "common@http://localhost:2000/remoteEntry.js",
+        },
 
         // For remotes (please adjust)
         name: "mfe1",
