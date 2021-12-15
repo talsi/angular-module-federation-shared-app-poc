@@ -3,17 +3,13 @@ import { CommonModule } from '@angular/common';
 import { FlightsSearchComponent } from './flights-search/flights-search.component';
 import { RouterModule } from '@angular/router';
 import { FLIGHTS_ROUTES } from './flights.routes';
-import { AuthLibModule } from 'auth-lib';
-import { SharedLibModule } from 'shared-lib';
 import { CounterModule } from 'common';
 
 @NgModule({
   imports: [
     CommonModule,
-    AuthLibModule,
-    SharedLibModule,
+    CounterModule,
     RouterModule.forChild(FLIGHTS_ROUTES),
-    CounterModule
   ],
   declarations: [
     FlightsSearchComponent

@@ -6,7 +6,7 @@ const share = mf.share;
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
   path.join(__dirname, '../../tsconfig.json'),
-  ['auth-lib']
+  []
 );
 
 module.exports = {
@@ -30,7 +30,6 @@ module.exports = {
         filename: "remoteEntry.js",  // 2-3K w/ Meta Data
         exposes: {
             '.': './projects/common/src/app/counter/index.ts',
-            './Module': './projects/common/src/app/counter/counter.module.ts',
         },
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' },

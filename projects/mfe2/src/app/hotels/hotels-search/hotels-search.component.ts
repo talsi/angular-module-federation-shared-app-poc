@@ -1,6 +1,4 @@
-import { HttpClient } from '@angular/common/http';
-import {Component, ViewChild, ViewContainerRef, Inject, Injector, ComponentFactoryResolver, OnInit} from '@angular/core';
-import { AuthLibService } from 'auth-lib';
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -9,7 +7,6 @@ import { AuthLibService } from 'auth-lib';
 })
 export class HotelsSearchComponent {
 
-  constructor(private authLibService: AuthLibService) {
-    this.authLibService.echo('HotelsSearchComponent');
+  constructor() {
   }
 }

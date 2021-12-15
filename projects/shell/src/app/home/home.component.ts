@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-// import { AuthLibService } from 'auth-lib';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent {
 
-  // constructor(private authLibService: AuthLibService) {
-  //   this.authLibService.echo('HomeComponent');
-  // }
+  constructor() {
+  }
 
 }
